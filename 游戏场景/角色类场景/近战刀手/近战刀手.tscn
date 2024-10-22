@@ -1,0 +1,435 @@
+[gd_scene load_steps=71 format=3 uid="uid://6ebjwd7hh6jf"]
+
+[ext_resource type="Texture2D" uid="uid://crmqlfksd2h41" path="res://游戏素材资源/近战怪物/png/fire_knight/10_take_hit/take_hit_1.png" id="1_l7fpc"]
+[ext_resource type="Texture2D" uid="uid://dsorfhdr8frhy" path="res://游戏素材资源/近战怪物/png/fire_knight/02_run/run_1.png" id="1_picuu"]
+[ext_resource type="Script" path="res://游戏场景/角色类场景/近战刀手/近战刀手.gd" id="1_vvshj"]
+[ext_resource type="Texture2D" uid="uid://ponsmiq1fl8m" path="res://游戏素材资源/近战怪物/png/fire_knight/10_take_hit/take_hit_2.png" id="2_0sgum"]
+[ext_resource type="Texture2D" uid="uid://du7x1cv2glfds" path="res://游戏素材资源/近战怪物/png/fire_knight/02_run/run_2.png" id="2_1dsl6"]
+[ext_resource type="Texture2D" uid="uid://bf200ymu264fu" path="res://游戏素材资源/近战怪物/png/fire_knight/02_run/run_3.png" id="3_le80j"]
+[ext_resource type="Texture2D" uid="uid://bibl1y7mynn0" path="res://游戏素材资源/近战怪物/png/fire_knight/10_take_hit/take_hit_3.png" id="3_tjm65"]
+[ext_resource type="Texture2D" uid="uid://cte6dq486x25r" path="res://游戏素材资源/近战怪物/png/fire_knight/02_run/run_4.png" id="4_2xsvx"]
+[ext_resource type="Texture2D" uid="uid://hxphnqx12xii" path="res://游戏素材资源/近战怪物/png/fire_knight/10_take_hit/take_hit_4.png" id="4_sewwk"]
+[ext_resource type="Texture2D" uid="uid://bpvh4sdmd3kvb" path="res://游戏素材资源/近战怪物/png/fire_knight/02_run/run_5.png" id="5_2tusn"]
+[ext_resource type="Texture2D" uid="uid://cnulnoac3ljni" path="res://游戏素材资源/近战怪物/png/fire_knight/10_take_hit/take_hit_5.png" id="5_ph851"]
+[ext_resource type="Texture2D" uid="uid://cvi1hwbgvp1h5" path="res://游戏素材资源/近战怪物/png/fire_knight/02_run/run_6.png" id="6_tlyi8"]
+[ext_resource type="Texture2D" uid="uid://b5skm207n041g" path="res://游戏素材资源/近战怪物/png/fire_knight/10_take_hit/take_hit_6.png" id="6_wox2p"]
+[ext_resource type="Texture2D" uid="uid://r4bva47lwh4u" path="res://游戏素材资源/近战怪物/png/fire_knight/05_1_atk/1_atk_1.png" id="7_12c8x"]
+[ext_resource type="Texture2D" uid="uid://o4bw4qcgy4jk" path="res://游戏素材资源/近战怪物/png/fire_knight/02_run/run_7.png" id="7_x5bne"]
+[ext_resource type="Texture2D" uid="uid://bvb6xjfkfj8nc" path="res://游戏素材资源/近战怪物/png/fire_knight/05_1_atk/1_atk_2.png" id="8_ogxyo"]
+[ext_resource type="Texture2D" uid="uid://e6qmn4mbhcbv" path="res://游戏素材资源/近战怪物/png/fire_knight/02_run/run_8.png" id="8_td71v"]
+[ext_resource type="Texture2D" uid="uid://b8qad10tqnqhs" path="res://游戏素材资源/近战怪物/png/fire_knight/05_1_atk/1_atk_3.png" id="9_okwmr"]
+[ext_resource type="Texture2D" uid="uid://crm08gmel10yf" path="res://游戏素材资源/近战怪物/png/fire_knight/05_1_atk/1_atk_4.png" id="10_xk1y2"]
+[ext_resource type="Texture2D" uid="uid://ctl3gpq8oeiq0" path="res://游戏素材资源/近战怪物/png/fire_knight/05_1_atk/1_atk_5.png" id="11_o5f4v"]
+[ext_resource type="Texture2D" uid="uid://bonvdwydeqab1" path="res://游戏素材资源/近战怪物/png/fire_knight/05_1_atk/1_atk_6.png" id="12_nh4nu"]
+[ext_resource type="Texture2D" uid="uid://dd31dglr8iy1w" path="res://游戏素材资源/近战怪物/png/fire_knight/05_1_atk/1_atk_7.png" id="13_1pxnh"]
+[ext_resource type="Texture2D" uid="uid://dcf4jyikd6gef" path="res://游戏素材资源/近战怪物/png/fire_knight/05_1_atk/1_atk_8.png" id="14_hbhvo"]
+[ext_resource type="Texture2D" uid="uid://jnn37vepw02v" path="res://游戏素材资源/近战怪物/png/fire_knight/05_1_atk/1_atk_9.png" id="15_kbncp"]
+[ext_resource type="Texture2D" uid="uid://qhblls5yrn5x" path="res://游戏素材资源/近战怪物/png/fire_knight/05_1_atk/1_atk_10.png" id="16_711mt"]
+[ext_resource type="Texture2D" uid="uid://cvq5oatfcu76k" path="res://游戏素材资源/近战怪物/png/fire_knight/05_1_atk/1_atk_11.png" id="17_x4ynq"]
+[ext_resource type="Texture2D" uid="uid://c8sjod53wth7m" path="res://游戏素材资源/近战怪物/png/fire_knight/06_2_atk/2_atk_1.png" id="18_s5f6n"]
+[ext_resource type="Texture2D" uid="uid://bwv3a6gtc2r4" path="res://游戏素材资源/近战怪物/png/fire_knight/06_2_atk/2_atk_2.png" id="19_vou81"]
+[ext_resource type="Texture2D" uid="uid://0suf3cufsqjp" path="res://游戏素材资源/近战怪物/png/fire_knight/06_2_atk/2_atk_3.png" id="20_th3c3"]
+[ext_resource type="Texture2D" uid="uid://ddqei58o2uyei" path="res://游戏素材资源/近战怪物/png/fire_knight/06_2_atk/2_atk_4.png" id="21_717fh"]
+[ext_resource type="Texture2D" uid="uid://vp8qpirtgeay" path="res://游戏素材资源/近战怪物/png/fire_knight/06_2_atk/2_atk_5.png" id="22_lk4ry"]
+[ext_resource type="Texture2D" uid="uid://bscv6f4mkqk5k" path="res://游戏素材资源/近战怪物/png/fire_knight/06_2_atk/2_atk_6.png" id="23_qw2s3"]
+[ext_resource type="Texture2D" uid="uid://uvvkxo54vv6q" path="res://游戏素材资源/近战怪物/png/fire_knight/06_2_atk/2_atk_7.png" id="24_cwdci"]
+[ext_resource type="Texture2D" uid="uid://d2vfxnogliemj" path="res://游戏素材资源/近战怪物/png/fire_knight/06_2_atk/2_atk_8.png" id="25_ahfxy"]
+[ext_resource type="Texture2D" uid="uid://vml58vbs6vkh" path="res://游戏素材资源/近战怪物/png/fire_knight/06_2_atk/2_atk_9.png" id="26_n8f7n"]
+[ext_resource type="Texture2D" uid="uid://cn6bycavppssi" path="res://游戏素材资源/近战怪物/png/fire_knight/06_2_atk/2_atk_10.png" id="27_lqiun"]
+[ext_resource type="Texture2D" uid="uid://dgvca7fieq1vs" path="res://游戏素材资源/近战怪物/png/fire_knight/06_2_atk/2_atk_11.png" id="28_dkxtq"]
+[ext_resource type="Texture2D" uid="uid://c4xuer0lfym7v" path="res://游戏素材资源/近战怪物/png/fire_knight/06_2_atk/2_atk_12.png" id="29_bsd5f"]
+[ext_resource type="Texture2D" uid="uid://mssj8eljtq2n" path="res://游戏素材资源/近战怪物/png/fire_knight/06_2_atk/2_atk_13.png" id="30_8c8ks"]
+[ext_resource type="Texture2D" uid="uid://big5tr6n2ot7q" path="res://游戏素材资源/近战怪物/png/fire_knight/06_2_atk/2_atk_14.png" id="31_ihawe"]
+[ext_resource type="Texture2D" uid="uid://bnaw73kve50dk" path="res://游戏素材资源/近战怪物/png/fire_knight/06_2_atk/2_atk_15.png" id="32_e4cyy"]
+[ext_resource type="Texture2D" uid="uid://uq04ocpippft" path="res://游戏素材资源/近战怪物/png/fire_knight/06_2_atk/2_atk_16.png" id="33_mbo2o"]
+[ext_resource type="Texture2D" uid="uid://chn44d2boafji" path="res://游戏素材资源/近战怪物/png/fire_knight/06_2_atk/2_atk_17.png" id="34_f4bk8"]
+[ext_resource type="Texture2D" uid="uid://dwd4d44h8vpbv" path="res://游戏素材资源/近战怪物/png/fire_knight/06_2_atk/2_atk_18.png" id="35_diih0"]
+[ext_resource type="Texture2D" uid="uid://c02rxc7iqabil" path="res://游戏素材资源/近战怪物/png/fire_knight/06_2_atk/2_atk_19.png" id="36_qiu3y"]
+[ext_resource type="Texture2D" uid="uid://dcp3pfi243f3x" path="res://游戏素材资源/近战怪物/png/fire_knight/11_death/death_1.png" id="37_fjsh7"]
+[ext_resource type="Texture2D" uid="uid://do50joc13m40j" path="res://游戏素材资源/近战怪物/png/fire_knight/11_death/death_2.png" id="38_22ii5"]
+[ext_resource type="Texture2D" uid="uid://gnfbo3u7cv4y" path="res://游戏素材资源/近战怪物/png/fire_knight/11_death/death_3.png" id="39_86vjb"]
+[ext_resource type="Texture2D" uid="uid://dsrktvev2y1n2" path="res://游戏素材资源/近战怪物/png/fire_knight/11_death/death_4.png" id="40_4ew0l"]
+[ext_resource type="Texture2D" uid="uid://c0pj4lngd0ebt" path="res://游戏素材资源/近战怪物/png/fire_knight/11_death/death_5.png" id="41_8noba"]
+[ext_resource type="Texture2D" uid="uid://cjufnppyub1um" path="res://游戏素材资源/近战怪物/png/fire_knight/11_death/death_6.png" id="42_grkna"]
+[ext_resource type="Texture2D" uid="uid://bi5beqmynr43i" path="res://游戏素材资源/近战怪物/png/fire_knight/11_death/death_7.png" id="43_88rqd"]
+[ext_resource type="Texture2D" uid="uid://b2xbaxfemvkr0" path="res://游戏素材资源/近战怪物/png/fire_knight/11_death/death_8.png" id="44_w058r"]
+[ext_resource type="Texture2D" uid="uid://c56p57f4q5tkq" path="res://游戏素材资源/近战怪物/png/fire_knight/11_death/death_9.png" id="45_7nisi"]
+[ext_resource type="Texture2D" uid="uid://b4v07n6dc2pwd" path="res://游戏素材资源/近战怪物/png/fire_knight/11_death/death_10.png" id="46_dubb7"]
+[ext_resource type="Texture2D" uid="uid://duekg2uk4va7q" path="res://游戏素材资源/近战怪物/png/fire_knight/11_death/death_11.png" id="47_wsat3"]
+[ext_resource type="Texture2D" uid="uid://bu66ojsmy2x2k" path="res://游戏素材资源/近战怪物/png/fire_knight/11_death/death_12.png" id="48_ybbv2"]
+[ext_resource type="Texture2D" uid="uid://bomkokp8dktkn" path="res://游戏素材资源/近战怪物/png/fire_knight/11_death/death_13.png" id="49_5ct8d"]
+[ext_resource type="Script" path="res://游戏场景/角色类场景/近战刀手/状态机/状态管理器.gd" id="58_w3hku"]
+[ext_resource type="Script" path="res://游戏场景/角色类场景/近战刀手/状态机/行走状态.gd" id="59_ni3fr"]
+[ext_resource type="Script" path="res://游戏场景/角色类场景/近战刀手/状态机/攻击状态.gd" id="60_41hbk"]
+[ext_resource type="Script" path="res://游戏场景/角色类场景/近战刀手/状态机/受击状态.gd" id="62_w4e0w"]
+[ext_resource type="AudioStream" uid="uid://c1nlh7w8ryikl" path="res://游戏素材资源/主角音效/take_hit.mp3" id="63_ngeok"]
+[ext_resource type="AudioStream" uid="uid://2esec6squqen" path="res://游戏素材资源/主角音效/player_attack.mp3" id="64_jdjk4"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_src53"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_l7fpc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_0sgum")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_tjm65")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_sewwk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ph851")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_wox2p")
+}],
+"loop": false,
+"name": &"受击",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_12c8x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ogxyo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_okwmr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_xk1y2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_o5f4v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_nh4nu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_1pxnh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_hbhvo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_kbncp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_711mt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_x4ynq")
+}],
+"loop": false,
+"name": &"攻击1",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("18_s5f6n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_vou81")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_th3c3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_717fh")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_lk4ry")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_qw2s3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_cwdci")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_ahfxy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_n8f7n")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_lqiun")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_dkxtq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_bsd5f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_8c8ks")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_ihawe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_e4cyy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_mbo2o")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_f4bk8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_diih0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_qiu3y")
+}],
+"loop": false,
+"name": &"攻击2",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("37_fjsh7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_22ii5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_86vjb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_4ew0l")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_8noba")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_grkna")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_88rqd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_w058r")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_7nisi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_dubb7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_wsat3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_ybbv2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_5ct8d")
+}],
+"loop": false,
+"name": &"死亡",
+"speed": 10.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_picuu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_1dsl6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_le80j")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_2xsvx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_2tusn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_tlyi8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_x5bne")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_td71v")
+}],
+"loop": true,
+"name": &"移动",
+"speed": 10.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_r3km3"]
+size = Vector2(16, 45)
+
+[sub_resource type="Animation" id="Animation_qteq7"]
+resource_name = "攻击1"
+tracks/0/type = "method"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [&"攻击1", 1.0, false],
+"method": &"play"
+}]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("FSM/Attack")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.5),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [],
+"method": &"attack1_check"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_alhik"]
+resource_name = "攻击2"
+length = 2.0
+tracks/0/type = "method"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [&"攻击2", 1.0, false],
+"method": &"play"
+}]
+}
+tracks/1/type = "method"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("FSM/Attack")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.5, 1.1, 1.26667, 1.4, 1.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"values": [{
+"args": [],
+"method": &"attack1_check"
+}, {
+"args": [],
+"method": &"attack2_left_check"
+}, {
+"args": [],
+"method": &"attack2_right_check"
+}, {
+"args": [],
+"method": &"attack2_left_check"
+}, {
+"args": [],
+"method": &"attack2_right_check"
+}]
+}
+
+[sub_resource type="Animation" id="Animation_drmwj"]
+resource_name = "走动动画"
+tracks/0/type = "method"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("AnimatedSprite2D")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"values": [{
+"args": [&"移动", 1.0, false],
+"method": &"play"
+}]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ehnio"]
+_data = {
+"攻击1": SubResource("Animation_qteq7"),
+"攻击2": SubResource("Animation_alhik"),
+"走动动画": SubResource("Animation_drmwj")
+}
+
+[node name="近战刀手" type="CharacterBody2D"]
+script = ExtResource("1_vvshj")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-2, -40)
+sprite_frames = SubResource("SpriteFrames_src53")
+animation = &"受击"
+autoplay = "移动"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -0.5)
+shape = SubResource("RectangleShape2D_r3km3")
+
+[node name="RightDownCast" type="RayCast2D" parent="."]
+position = Vector2(30, 0)
+
+[node name="LeftDownCast" type="RayCast2D" parent="."]
+position = Vector2(-30, 0)
+
+[node name="FSM" type="Node" parent="."]
+script = ExtResource("58_w3hku")
+
+[node name="Run" type="Node" parent="FSM"]
+script = ExtResource("59_ni3fr")
+
+[node name="Attack" type="Node" parent="FSM"]
+script = ExtResource("60_41hbk")
+
+[node name="Timer" type="Timer" parent="FSM/Attack"]
+wait_time = 0.25
+
+[node name="Take_Hit" type="Node" parent="FSM"]
+script = ExtResource("62_w4e0w")
+
+[node name="AttackCheck" type="Node2D" parent="."]
+
+[node name="A1" type="Area2D" parent="AttackCheck"]
+position = Vector2(-27, -46)
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="AttackCheck/A1"]
+polygon = PackedVector2Array(3, 2, -4, 4, 0, -11, 39, -19, 84, -1, 101, 47, 85, 70, 64, 70, 86, 46, 57, 3)
+
+[node name="A2L" type="Area2D" parent="AttackCheck"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="AttackCheck/A2L"]
+polygon = PackedVector2Array(1, -20, -29, -31, -52, -23, -66, -10, -57, 12, -36, 20, -34, 4, -47, -3, -29, -10, -13, -11, 1, -16, 5, -18)
+
+[node name="A2R" type="Area2D" parent="AttackCheck"]
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="AttackCheck/A2R"]
+polygon = PackedVector2Array(-32, 10, -11, 17, 16, 16, 45, 11, 61, 0, 54, -11, 36, -21, -3, -24, -23, -19, -36, -26, -15, -34, 18, -36, 62, -24, 70, -15, 75, 1, 59, 12, 30, 23, -8, 24, -35, 20, -43, 14, -43, 8)
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_ehnio")
+}
+
+[node name="Audio" type="Node2D" parent="."]
+
+[node name="Take_Hit" type="AudioStreamPlayer2D" parent="Audio"]
+stream = ExtResource("63_ngeok")
+
+[node name="Attack" type="AudioStreamPlayer2D" parent="Audio"]
+stream = ExtResource("64_jdjk4")
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="FSM/Attack" method="_on_animated_sprite_2d_animation_finished"]
+[connection signal="animation_finished" from="AnimatedSprite2D" to="FSM/Take_Hit" method="_on_animated_sprite_2d_animation_finished"]

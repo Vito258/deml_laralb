@@ -1,0 +1,57 @@
+[gd_scene load_steps=5 format=3 uid="uid://o1qla80nj4vp"]
+
+[ext_resource type="PackedScene" uid="uid://b76i0g8mxhitr" path="res://游戏场景/角色类场景/主角/主角.tscn" id="1_ktv4s"]
+[ext_resource type="PackedScene" uid="uid://6ebjwd7hh6jf" path="res://游戏场景/角色类场景/近战刀手/近战刀手.tscn" id="3_l77mk"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_sbq6b"]
+size = Vector2(653, 41)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0s2d4"]
+size = Vector2(80.5, 69)
+
+[node name="测试场景" type="Node2D"]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(583, 556)
+shape = SubResource("RectangleShape2D_sbq6b")
+debug_color = Color(0.270626, 0.620474, 0.361434, 0.42)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(583, 556)
+shape = SubResource("RectangleShape2D_sbq6b")
+debug_color = Color(0.270626, 0.620474, 0.361434, 0.42)
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
+visible = false
+position = Vector2(1593, 499)
+shape = SubResource("RectangleShape2D_0s2d4")
+debug_color = Color(0.979242, 0.0539512, 0.342577, 0.42)
+
+[node name="主角" parent="." instance=ExtResource("1_ktv4s")]
+position = Vector2(364, 526)
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D3"]
+position = Vector2(1309, 556)
+shape = SubResource("RectangleShape2D_sbq6b")
+debug_color = Color(0.705842, 0.481854, 0.228973, 0.42)
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D3"]
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="."]
+visible = false
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D4"]
+position = Vector2(232, 501)
+shape = SubResource("RectangleShape2D_0s2d4")
+debug_color = Color(0.979242, 0.0539512, 0.342577, 0.42)
+
+[node name="近战刀手" parent="." instance=ExtResource("3_l77mk")]
+position = Vector2(663, 509)

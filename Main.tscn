@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://ddm4vd4gn014c"]
+
+[ext_resource type="PackedScene" uid="uid://3ng0dg6xpgv7" path="res://游戏场景/游戏界面/游戏开始界面.tscn" id="1_b3l3y"]
+[ext_resource type="Script" path="res://main.gd" id="1_w8nlg"]
+
+[node name="Main" type="TextureRect"]
+script = ExtResource("1_w8nlg")
+
+[node name="游戏开始界面" parent="." instance=ExtResource("1_b3l3y")]
+layout_mode = 0
+
+[connection signal="game_start" from="游戏开始界面" to="." method="_on_游戏开始界面_game_start"]

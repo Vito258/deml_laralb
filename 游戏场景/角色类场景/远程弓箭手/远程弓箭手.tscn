@@ -1,0 +1,266 @@
+[gd_scene load_steps=54 format=3 uid="uid://3uhd88q1ed44"]
+
+[ext_resource type="Script" path="res://游戏场景/角色类场景/远程弓箭手/远程弓箭手.gd" id="1_dtjlu"]
+[ext_resource type="Texture2D" uid="uid://cr0jvm4pdm1j6" path="res://游戏素材资源/远程怪物/animations/PNG/take_hit/take_hit_1.png" id="1_iin3x"]
+[ext_resource type="Texture2D" uid="uid://bmrm4awre050n" path="res://游戏素材资源/远程怪物/animations/PNG/run/run_1.png" id="1_s1ko4"]
+[ext_resource type="Texture2D" uid="uid://c4mca4kxxuq8u" path="res://游戏素材资源/远程怪物/animations/PNG/take_hit/take_hit_2.png" id="2_jwr14"]
+[ext_resource type="Texture2D" uid="uid://cj4s4uc4jyeuw" path="res://游戏素材资源/远程怪物/animations/PNG/run/run_2.png" id="2_kanso"]
+[ext_resource type="Texture2D" uid="uid://bg3bv0k7u0gca" path="res://游戏素材资源/远程怪物/animations/PNG/take_hit/take_hit_3.png" id="3_kal1e"]
+[ext_resource type="Texture2D" uid="uid://dcqmt4y1ck0gh" path="res://游戏素材资源/远程怪物/animations/PNG/run/run_3.png" id="3_v4f72"]
+[ext_resource type="Texture2D" uid="uid://bxf2nilwjudx4" path="res://游戏素材资源/远程怪物/animations/PNG/take_hit/take_hit_4.png" id="4_gwi63"]
+[ext_resource type="Texture2D" uid="uid://bsrnwbe1usdmp" path="res://游戏素材资源/远程怪物/animations/PNG/run/run_4.png" id="4_y3k64"]
+[ext_resource type="Texture2D" uid="uid://vl8hlbr31f7i" path="res://游戏素材资源/远程怪物/animations/PNG/take_hit/take_hit_5.png" id="5_on54i"]
+[ext_resource type="Texture2D" uid="uid://buqko777wuyiu" path="res://游戏素材资源/远程怪物/animations/PNG/run/run_5.png" id="5_x07qx"]
+[ext_resource type="Texture2D" uid="uid://cnhri5iwbj4w" path="res://游戏素材资源/远程怪物/animations/PNG/run/run_6.png" id="6_04bhi"]
+[ext_resource type="Texture2D" uid="uid://82ex3w02xc01" path="res://游戏素材资源/远程怪物/animations/PNG/take_hit/take_hit_6.png" id="6_rjmug"]
+[ext_resource type="Texture2D" uid="uid://dlia2ry0tvdte" path="res://游戏素材资源/远程怪物/animations/PNG/death/death_1.png" id="7_aucl2"]
+[ext_resource type="Texture2D" uid="uid://nqh55dhhy737" path="res://游戏素材资源/远程怪物/animations/PNG/2_atk/2_atk_1.png" id="7_f4wm4"]
+[ext_resource type="Texture2D" uid="uid://cvpr5nvrgh5q3" path="res://游戏素材资源/远程怪物/animations/PNG/run/run_7.png" id="7_qdi77"]
+[ext_resource type="Texture2D" uid="uid://gysebc76r0yp" path="res://游戏素材资源/远程怪物/animations/PNG/2_atk/2_atk_2.png" id="8_0nka3"]
+[ext_resource type="Texture2D" uid="uid://b320vsieyj6kw" path="res://游戏素材资源/远程怪物/animations/PNG/run/run_8.png" id="8_ct40i"]
+[ext_resource type="Texture2D" uid="uid://dh47knj70s27c" path="res://游戏素材资源/远程怪物/animations/PNG/death/death_2.png" id="8_qn4fo"]
+[ext_resource type="Texture2D" uid="uid://bdyp33ejhqjdh" path="res://游戏素材资源/远程怪物/animations/PNG/run/run_9.png" id="9_otxf6"]
+[ext_resource type="Texture2D" uid="uid://dx8i56sovtbah" path="res://游戏素材资源/远程怪物/animations/PNG/death/death_3.png" id="9_suosa"]
+[ext_resource type="Texture2D" uid="uid://cy5yvdmgp502e" path="res://游戏素材资源/远程怪物/animations/PNG/2_atk/2_atk_3.png" id="9_y547u"]
+[ext_resource type="Texture2D" uid="uid://bqeh70wy3rypo" path="res://游戏素材资源/远程怪物/animations/PNG/2_atk/2_atk_4.png" id="10_03e8u"]
+[ext_resource type="Texture2D" uid="uid://dx5achq7fp6lr" path="res://游戏素材资源/远程怪物/animations/PNG/run/run_10.png" id="10_c0u3u"]
+[ext_resource type="Texture2D" uid="uid://doogw5xbky6p8" path="res://游戏素材资源/远程怪物/animations/PNG/death/death_4.png" id="10_ho7cu"]
+[ext_resource type="Texture2D" uid="uid://347ovcdo5b4p" path="res://游戏素材资源/远程怪物/animations/PNG/2_atk/2_atk_5.png" id="11_5n5u5"]
+[ext_resource type="Texture2D" uid="uid://gxsech0vv43o" path="res://游戏素材资源/远程怪物/animations/PNG/death/death_5.png" id="11_tj1yu"]
+[ext_resource type="Texture2D" uid="uid://c8nqw1x2j615h" path="res://游戏素材资源/远程怪物/animations/PNG/death/death_6.png" id="12_dlmct"]
+[ext_resource type="Texture2D" uid="uid://cyr6mru2tmv62" path="res://游戏素材资源/远程怪物/animations/PNG/2_atk/2_atk_6.png" id="12_uw4uf"]
+[ext_resource type="Texture2D" uid="uid://cva7x2gttm1l5" path="res://游戏素材资源/远程怪物/animations/PNG/death/death_7.png" id="13_50yj0"]
+[ext_resource type="Texture2D" uid="uid://dwh6pm06ths1j" path="res://游戏素材资源/远程怪物/animations/PNG/2_atk/2_atk_7.png" id="13_xhex4"]
+[ext_resource type="Texture2D" uid="uid://bwqrpqf00psxk" path="res://游戏素材资源/远程怪物/animations/PNG/2_atk/2_atk_8.png" id="14_gqr1d"]
+[ext_resource type="Texture2D" uid="uid://dy41p8eujkhj6" path="res://游戏素材资源/远程怪物/animations/PNG/death/death_8.png" id="14_rw6vy"]
+[ext_resource type="Texture2D" uid="uid://b4c72456bq0qw" path="res://游戏素材资源/远程怪物/animations/PNG/death/death_9.png" id="15_5ant6"]
+[ext_resource type="Texture2D" uid="uid://cf7igh4dowk3" path="res://游戏素材资源/远程怪物/animations/PNG/2_atk/2_atk_9.png" id="15_7idlm"]
+[ext_resource type="Texture2D" uid="uid://dub8fxms7sxwj" path="res://游戏素材资源/远程怪物/animations/PNG/death/death_10.png" id="16_15fv4"]
+[ext_resource type="Texture2D" uid="uid://dpnw8o7prujm" path="res://游戏素材资源/远程怪物/animations/PNG/2_atk/2_atk_10.png" id="16_t82or"]
+[ext_resource type="Texture2D" uid="uid://ck1lxwjwywkn1" path="res://游戏素材资源/远程怪物/animations/PNG/death/death_11.png" id="17_otadr"]
+[ext_resource type="Texture2D" uid="uid://bdxl0hgw80s2i" path="res://游戏素材资源/远程怪物/animations/PNG/2_atk/2_atk_11.png" id="17_q1mcc"]
+[ext_resource type="Texture2D" uid="uid://dvsj1jkfmowwr" path="res://游戏素材资源/远程怪物/animations/PNG/death/death_12.png" id="18_hlh2g"]
+[ext_resource type="Texture2D" uid="uid://cu6r6ymlivf48" path="res://游戏素材资源/远程怪物/animations/PNG/2_atk/2_atk_12.png" id="18_l82r8"]
+[ext_resource type="Texture2D" uid="uid://c6do8omefwsrh" path="res://游戏素材资源/远程怪物/animations/PNG/death/death_13.png" id="19_4uffl"]
+[ext_resource type="Texture2D" uid="uid://c0k31t5e0swcj" path="res://游戏素材资源/远程怪物/animations/PNG/2_atk/2_atk_13.png" id="19_7udhf"]
+[ext_resource type="Texture2D" uid="uid://bjwfbtm8i2x27" path="res://游戏素材资源/远程怪物/animations/PNG/death/death_14.png" id="20_2m8mm"]
+[ext_resource type="Texture2D" uid="uid://v5r5blg8yhtg" path="res://游戏素材资源/远程怪物/animations/PNG/2_atk/2_atk_14.png" id="20_ec5bx"]
+[ext_resource type="Texture2D" uid="uid://s8hhbp38dfef" path="res://游戏素材资源/远程怪物/animations/PNG/death/death_15.png" id="21_2msb3"]
+[ext_resource type="Texture2D" uid="uid://b67othjpvkrx6" path="res://游戏素材资源/远程怪物/animations/PNG/2_atk/2_atk_15.png" id="21_j03yo"]
+[ext_resource type="Texture2D" uid="uid://cc2rjoekbw1ie" path="res://游戏素材资源/远程怪物/animations/PNG/death/death_16.png" id="22_petoj"]
+[ext_resource type="Texture2D" uid="uid://bgvrf2sk1c848" path="res://游戏素材资源/远程怪物/animations/PNG/death/death_17.png" id="23_34r05"]
+[ext_resource type="Texture2D" uid="uid://cgusavoogdapu" path="res://游戏素材资源/远程怪物/animations/PNG/death/death_18.png" id="24_qa5ff"]
+[ext_resource type="Texture2D" uid="uid://dec0tvjxqxtjd" path="res://游戏素材资源/远程怪物/animations/PNG/death/death_19.png" id="25_8cng8"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7ksed"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_iin3x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_jwr14")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_kal1e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_gwi63")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_on54i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_rjmug")
+}],
+"loop": false,
+"name": &"受击",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_f4wm4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_0nka3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_y547u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_03e8u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_5n5u5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_uw4uf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_xhex4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_gqr1d")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_7idlm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_t82or")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_q1mcc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_l82r8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_7udhf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_ec5bx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_j03yo")
+}],
+"loop": false,
+"name": &"攻击",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("7_aucl2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_qn4fo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_suosa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_ho7cu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_tj1yu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_dlmct")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_50yj0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_rw6vy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_5ant6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_15fv4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_otadr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_hlh2g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_4uffl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_2m8mm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_2msb3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_petoj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_34r05")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_qa5ff")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_8cng8")
+}],
+"loop": false,
+"name": &"死亡",
+"speed": 8.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("1_s1ko4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("2_kanso")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_v4f72")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_y3k64")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_x07qx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_04bhi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_qdi77")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_ct40i")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_otxf6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_c0u3u")
+}],
+"loop": true,
+"name": &"移动",
+"speed": 8.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_1i1mc"]
+size = Vector2(15, 34)
+
+[node name="远程弓箭手" type="CharacterBody2D"]
+script = ExtResource("1_dtjlu")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(0, -31)
+scale = Vector2(0.767361, 0.765625)
+sprite_frames = SubResource("SpriteFrames_7ksed")
+animation = &"攻击"
+autoplay = "移动"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 0)
+shape = SubResource("RectangleShape2D_1i1mc")
+
+[node name="RightDownCast" type="RayCast2D" parent="."]
+position = Vector2(20, 0)
+
+[node name="LeftDownCast" type="RayCast2D" parent="."]
+position = Vector2(-20, 0)
+
+[node name="ArrowRight" type="Node2D" parent="."]
+position = Vector2(30, -1)
+
+[node name="ArrowLeft" type="Node2D" parent="."]
+position = Vector2(-33, 0)
+
+[node name="ArrowRightCast" type="RayCast2D" parent="."]
+position = Vector2(30, -1)
+target_position = Vector2(200, 0)
+
+[node name="ArrowLeftCast" type="RayCast2D" parent="."]
+position = Vector2(-33, 0)
+target_position = Vector2(-200, 0)
+
+[connection signal="animation_finished" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_animation_finished"]
+[connection signal="frame_changed" from="AnimatedSprite2D" to="." method="_on_animated_sprite_2d_frame_changed"]
